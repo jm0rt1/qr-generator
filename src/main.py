@@ -1,6 +1,7 @@
 import logging
 import logging.handlers
 from src.shared.settings import GlobalSettings
+from src.generator.generator import generate
 
 
 def initialize_logging():
@@ -18,3 +19,4 @@ def main():
     """run a console menu that has two options, runs in a while loop so multiple options can be selected"""
 
     initialize_logging()
+    generate()
